@@ -11,6 +11,19 @@ body {
   h1 { margin-bottom: 1em; }
 }
 
+.btn-reset {
+  background: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;  
+}
+
 
 .slice {
   position: relative;
@@ -26,19 +39,26 @@ body {
   height: 26px;
 }
 
-.btn-reset {
-  background: #fff;
-  color: #333;
-  border: 1px solid #ccc;
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-  gap: 4px;  
-  margin-top: 2em;
-}
-
 .hamburger {
   transform: scale(0.8, 0.8);
+}
+
+.cutlet, .cheese, .tomato, .salad {
+  position: relative;
+  transition: 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.85;
+    transform: translateX(80px);
+    &:after {
+      content: 'X';
+      position: absolute;
+      right: 0px;
+      top: 0;
+      background: #efefef;
+      padding: 0.5em;
+      border-radius: 4px;
+    }
+  }
 }
