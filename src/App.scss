@@ -1,0 +1,44 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  width: 100%;
+  text-align: center;
+  h1 { margin-bottom: 1em; }
+}
+
+
+.slice {
+  position: relative;
+  img { display: block; }
+}
+
+.salad {
+  height: 40px;
+}
+
+.cheese {
+  z-index: 9;
+  height: 26px;
+}
+
+.btn-reset {
+  background: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 4px;  
+  margin-top: 2em;
+}
+
+.hamburger {
+  transform: scale(0.8, 0.8);
+}
