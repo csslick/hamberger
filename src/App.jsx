@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.scss'
 import Hamburger from './components/Hamburger'
 import Salad from './components/Salad'
-import Tomato from './components/tomato'
+import Tomato from './components/Tomato'
 import Cheese from './components/Cheese'
 import Cutlet from './components/Cutlet'
 
